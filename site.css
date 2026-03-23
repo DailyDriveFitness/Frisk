@@ -1107,12 +1107,166 @@ main > .hero:first-child {
   margin-bottom: var(--s-3);
 }
 
+.showcase-placeholder-hint {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  opacity: 0.72;
+  max-width: 13rem;
+  line-height: 1.55;
+}
+
+.showcase-placeholder-mark {
+  width: 2.5rem;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.45), transparent);
+  opacity: 0.9;
+}
+
+.showcase-caption-block {
+  text-align: center;
+  max-width: 17rem;
+}
+
+.showcase-caption-title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.03125rem;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  color: var(--brand);
+  margin-bottom: var(--s-2);
+}
+
 .showcase-caption {
   font-size: 0.84375rem;
   line-height: 1.62;
   font-weight: 450;
   color: var(--text-secondary);
   letter-spacing: -0.012em;
+}
+
+/* —— Closing CTA —— */
+.closing-cta {
+  margin-top: calc(var(--s-10) + var(--s-2));
+  padding: calc(var(--s-9) + var(--s-2)) var(--s-6) calc(var(--s-9) + var(--s-3));
+  text-align: center;
+  background: linear-gradient(168deg, #fefffe 0%, var(--surface-elevated) 55%, rgba(241, 242, 250, 0.5) 100%);
+  border: 1px solid rgba(26, 46, 36, 0.07);
+  border-radius: calc(var(--radius-2xl) + 4px);
+  box-shadow: var(--shadow-sheet), 0 0 0 1px rgba(255, 255, 255, 0.65) inset;
+}
+
+.closing-cta::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.closing-cta-inner {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.closing-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 4.5vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  color: var(--brand);
+  margin-bottom: var(--s-4);
+}
+
+.closing-cta .section-lead {
+  margin-bottom: var(--s-8);
+}
+
+.cta-panel {
+  position: relative;
+  padding: var(--s-8) var(--s-6) var(--s-7);
+  border-radius: calc(var(--radius-xl) + 4px);
+  background: linear-gradient(172deg, rgba(255, 255, 255, 0.95) 0%, var(--surface-muted) 38%, rgba(108, 92, 231, 0.07) 100%);
+  border: 1px solid rgba(26, 46, 36, 0.07);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 20px 48px -28px rgba(108, 92, 231, 0.2);
+  text-align: center;
+  overflow: hidden;
+}
+
+.cta-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.25), transparent);
+  opacity: 0.9;
+}
+
+.cta-panel-label {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: var(--s-3);
+  padding: 0.25rem 0.65rem;
+  background: rgba(26, 46, 36, 0.04);
+  border-radius: 999px;
+  border: 1px solid rgba(26, 46, 36, 0.06);
+}
+
+.cta-panel-note {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 450;
+  margin-bottom: var(--s-6);
+  line-height: 1.62;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-4);
+}
+
+.store-badges a {
+  display: block;
+  line-height: 0;
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(26, 46, 36, 0.06);
+  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease-soft), border-color 0.25s var(--ease-soft);
+  box-shadow: 0 10px 28px -14px rgba(26, 46, 36, 0.18), 0 1px 0 rgba(255, 255, 255, 1) inset;
+}
+
+.store-badges a:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(108, 92, 231, 0.18);
+  box-shadow: 0 20px 44px -18px rgba(108, 92, 231, 0.28), 0 1px 0 rgba(255, 255, 255, 1) inset;
+}
+
+.store-badges a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.store-badges img {
+  height: 56px;
+  width: auto;
+  display: block;
+  border-radius: var(--radius-sm);
 }
 
 /* —— Closing CTA —— */
