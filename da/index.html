@@ -42,23 +42,37 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-inner">
-          <p class="hero-kicker">Rolig sundhedssporing</p>
-          <h1 id="hero-title">Din sundhed. Endelig enkel.</h1>
-          <p class="hero-lead">Alt det, der betyder noget — skridt, ernæring, træning, vægt, smerte og mere — i én rolig daglig oversigt. Frisk er bygget til vaner, ikke perfektion: hold fast uden stress.</p>
-          <p class="hero-sub">Synkroniser med Apple Health og Health Connect, så helhedsbilledet hænger sammen, stille og trygt.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#get-frisk">Hent Frisk på Google Play</a>
-            <a class="btn btn-secondary" href="#features-prologue">Udforsk funktioner</a>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <div class="hero-inner">
+              <p class="hero-kicker">Rolig sundhedssporing</p>
+              <h1 id="hero-title">Al din sundhed i én app</h1>
+              <p class="hero-lead">Alt det, der betyder noget — skridt, ernæring, træning, vægt, smerte og mere — i én rolig daglig oversigt. Bygget til vaner, ikke perfektion: hold fast uden stress.</p>
+              <p class="hero-sub">Synkroniser med Apple Health og Health Connect, så helhedsbilledet hænger sammen, stille og trygt.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#get-frisk">Hent Frisk på Google Play</a>
+                <a class="btn btn-secondary" href="#features-prologue">Udforsk funktioner</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-device-glow"></div>
+            <div class="hero-device-wrap">
+              <div class="phone-chassis phone-frame--hero">
+                <div class="phone-screen">
+                  <img src="../images/showcase-home.svg" alt="" width="390" height="844" decoding="async" fetchpriority="high">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="features-prologue" id="features-prologue">
+      <div class="features-prologue reveal-on-scroll" id="features-prologue">
         <p class="features-label" id="features-heading">Sådan hjælper Frisk</p>
         <p class="section-lead">Ét sted at logge, se tilbage og fortsætte — med plads til at ånde.</p>
       </div>
-      <div class="features" role="list" aria-labelledby="features-heading">
+      <div class="features reveal-on-scroll" role="list" aria-labelledby="features-heading">
         <article class="feature" role="listitem">
           <div class="feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v6h6"/><path d="M12 20v-6H6"/><circle cx="12" cy="12" r="3"/></svg>
@@ -97,7 +111,7 @@
         </article>
       </div>
 
-      <section class="section trust" aria-labelledby="trust-title">
+      <section class="section trust reveal-on-scroll" aria-labelledby="trust-title">
         <header class="section-header">
           <p class="section-eyebrow">Tillid &amp; privatliv</p>
           <h2 id="trust-title" class="section-title">Dine data forbliver dine</h2>
@@ -128,7 +142,7 @@
         </ul>
       </section>
 
-      <section class="section" aria-labelledby="why-title">
+      <section class="section reveal-on-scroll" aria-labelledby="why-title">
         <header class="section-header section-header--left">
           <p class="section-eyebrow">Hvorfor Frisk</p>
           <h2 id="why-title" class="section-title">Andet fra grunden</h2>
@@ -154,7 +168,7 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="dayflow-title">
+      <section class="section reveal-on-scroll" aria-labelledby="dayflow-title">
         <header class="section-header">
           <p class="section-eyebrow">En dag med Frisk</p>
           <h2 id="dayflow-title" class="section-title">Passer hverdagens rytme</h2>
@@ -177,72 +191,166 @@
       </section>
 
       <!-- Appbilleder: placer ../images/showcase-1.png osv. og fjern kommentar fra <img> i hver .phone-screen -->
-      <section class="showcase section" aria-labelledby="showcase-title">
-        <div class="showcase-spotlight" aria-hidden="true"></div>
-        <header class="showcase-header">
-          <p class="showcase-eyebrow">Produktet</p>
-          <h2 id="showcase-title" class="showcase-title">Oplevelsen på telefonen</h2>
-          <p class="showcase-intro">Tre udsnit fra appen — indrammet for klarhed. Tilføj egne portrætbilleder, når du vil.</p>
+            <div class="app-showcase" id="app-showcase">
+        <header class="app-showcase-intro reveal-on-scroll">
+          <p class="section-eyebrow">I appen</p>
+          <h2 class="section-title">Skabt til at føles enkelt</h2>
+          <p class="section-lead">Rigtige skærmbilleder fra Frisk — aktivitet, rehab, rutiner, måltider og væske — indrammet som på telefonen.</p>
         </header>
-        <div class="showcase-grid">
-          <figure class="showcase-card">
-            <div class="showcase-device-wrap">
-              <div class="phone-chassis">
-                <div class="phone-screen">
-                  <!-- <img src="../images/showcase-1.png" alt="Frisk-appen — daglig oversigt" width="390" height="844" loading="lazy"> -->
-                  <span class="showcase-placeholder" aria-hidden="true">
-                    <span class="showcase-placeholder-mark"></span>
-                    <span class="showcase-placeholder-inner">Oversigt</span>
-                    <span class="showcase-placeholder-hint">Portræt · 390×844</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <figcaption class="showcase-caption-block">
-              <span class="showcase-caption-title">Daglig oversigt</span>
-              <span class="showcase-caption">Skridt, aktivitet og dagens rytme samlet i en rolig startside.</span>
-            </figcaption>
-          </figure>
-          <figure class="showcase-card">
-            <div class="showcase-device-wrap">
-              <div class="phone-chassis">
-                <div class="phone-screen">
-                  <!-- <img src="../images/showcase-2.png" alt="Frisk-appen — logning" width="390" height="844" loading="lazy"> -->
-                  <span class="showcase-placeholder" aria-hidden="true">
-                    <span class="showcase-placeholder-mark"></span>
-                    <span class="showcase-placeholder-inner">Logning</span>
-                    <span class="showcase-placeholder-hint">Portræt · 390×844</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <figcaption class="showcase-caption-block">
-              <span class="showcase-caption-title">Nem logning</span>
-              <span class="showcase-caption">Måltider og træning registreres hurtigt, så vanen bliver nem at holde.</span>
-            </figcaption>
-          </figure>
-          <figure class="showcase-card">
-            <div class="showcase-device-wrap">
-              <div class="phone-chassis">
-                <div class="phone-screen">
-                  <!-- <img src="../images/showcase-3.png" alt="Frisk-appen — mål" width="390" height="844" loading="lazy"> -->
-                  <span class="showcase-placeholder" aria-hidden="true">
-                    <span class="showcase-placeholder-mark"></span>
-                    <span class="showcase-placeholder-inner">Mål</span>
-                    <span class="showcase-placeholder-hint">Portræt · 390×844</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <figcaption class="showcase-caption-block">
-              <span class="showcase-caption-title">Mål med luft</span>
-              <span class="showcase-caption">Fremgang, der belønner jævnhed uden at gøre hver dag til en test.</span>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
 
-      <section class="closing-cta section" aria-labelledby="closing-title">
+        <section class="app-showcase-section reveal-on-scroll" aria-labelledby="shot-progress-title">
+          <div class="app-showcase-copy">
+            <p class="section-eyebrow">Hjem</p>
+            <h3 id="shot-progress-title" class="app-showcase-title">Se dit fremskridt med ét blik</h3>
+            <p class="app-showcase-lead">Aktivitetsringe, ugentlige skridt, vægt og vand — ét roligt overblik, der viser, hvad der betyder noget i dag.</p>
+            <ul class="app-showcase-bullets">
+              <li>Ringvisning for skridt, kalorier og distance</li>
+              <li>Ugentlig trend så momentum er synligt</li>
+              <li>Synkroniserer med Apple Health og Health Connect</li>
+            </ul>
+          </div>
+          <div class="app-showcase-visual">
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--main">
+              <div class="app-showcase-glow" aria-hidden="true"></div>
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-home.svg" alt="Frisk-startskærm med aktivitetsringe og ugeoversigt" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--secondary phone-frame--small" aria-hidden="true">
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-water.svg" alt="" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-showcase-section app-showcase-section--flip reveal-on-scroll" aria-labelledby="shot-rehab-title">
+          <div class="app-showcase-copy">
+            <p class="section-eyebrow">Rehab</p>
+            <h3 id="shot-rehab-title" class="app-showcase-title">Træn og restituer smartere</h3>
+            <p class="app-showcase-lead">Programmer, filtre og tydelige øvelseskort — vælg det, der passer dagen, og log uden friktion.</p>
+            <ul class="app-showcase-bullets">
+              <li>Program, log, mål og tips i ét flow</li>
+              <li>Filtrér efter stilling og kontekst</li>
+              <li>Sværhedsgrad, der hjælper dig med at vælge trygt</li>
+            </ul>
+          </div>
+          <div class="app-showcase-visual">
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--main">
+              <div class="app-showcase-glow" aria-hidden="true"></div>
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-rehab.svg" alt="Frisk rehab- og træningsprogramliste" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--secondary phone-frame--small" aria-hidden="true">
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-home.svg" alt="" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-showcase-section reveal-on-scroll" aria-labelledby="shot-journal-title">
+          <div class="app-showcase-copy">
+            <p class="section-eyebrow">Journal</p>
+            <h3 id="shot-journal-title" class="app-showcase-title">Byg rutiner, der holder</h3>
+            <p class="app-showcase-lead">Energicheck, kontakter til daglige rutiner, tjeklister og noter — små strukturer, der støtter virkeligheden.</p>
+            <ul class="app-showcase-bullets">
+              <li>Hurtig energisnapshot for at se mønstre</li>
+              <li>Rutiner du kan tænde uden dårlig samvittighed</li>
+              <li>Tjeklister og noter samlet</li>
+            </ul>
+          </div>
+          <div class="app-showcase-visual">
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--main">
+              <div class="app-showcase-glow" aria-hidden="true"></div>
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-journal.svg" alt="Frisk-journal med energiniveau, rutiner og tjekliste" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--secondary phone-frame--small" aria-hidden="true">
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-rehab.svg" alt="" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-showcase-section app-showcase-section--flip reveal-on-scroll" aria-labelledby="shot-meals-title">
+          <div class="app-showcase-copy">
+            <p class="section-eyebrow">Mad</p>
+            <h3 id="shot-meals-title" class="app-showcase-title">Planlæg måltider uden besvær</h3>
+            <p class="app-showcase-lead">Ugentlig måltidsplan med tydelig dagvælger — se ugen, vælg en dag, og hold styr på det uden regnearksfølelse.</p>
+            <ul class="app-showcase-bullets">
+              <li>Måltidsplan-fane ved siden af mad, vand og opskrifter</li>
+              <li>Ugenavigation der matcher, hvordan du faktisk spiser</li>
+              <li>Plads til indkøbsflowet (kurv)</li>
+            </ul>
+          </div>
+          <div class="app-showcase-visual">
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--main">
+              <div class="app-showcase-glow" aria-hidden="true"></div>
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-meals.svg" alt="Frisk ugentlig måltidsplan" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--secondary phone-frame--small" aria-hidden="true">
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-journal.svg" alt="" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-showcase-section reveal-on-scroll" aria-labelledby="shot-water-title">
+          <div class="app-showcase-copy">
+            <p class="section-eyebrow">Væske</p>
+            <h3 id="shot-water-title" class="app-showcase-title">Hold dig hydreret og frisk</h3>
+            <p class="app-showcase-lead">Et fokuseret vandview med tydeligt mål og hurtig tilføjelse — hydrering synlig uden masen.</p>
+            <ul class="app-showcase-bullets">
+              <li>Fremskriftsring omkring dagligt mål</li>
+              <li>Hurtig logning for almindelige mængder</li>
+              <li>Ligger ved siden af resten af din sundhedshistorie</li>
+            </ul>
+          </div>
+          <div class="app-showcase-visual">
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--main">
+              <div class="app-showcase-glow" aria-hidden="true"></div>
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-water.svg" alt="Frisk vandsporing med dagligt mål" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="app-showcase-device-wrap app-showcase-device-wrap--secondary phone-frame--small" aria-hidden="true">
+              <div class="phone-chassis">
+                <div class="phone-screen">
+                  <img src="../images/showcase-meals.svg" alt="" width="390" height="844" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+<section class="closing-cta section reveal-on-scroll" aria-labelledby="closing-title">
         <div class="closing-cta-inner">
           <h2 id="closing-title">Start en roligere rutine</h2>
           <p class="section-lead">Download Frisk på Google Play og saml alt det, der betyder noget, ét stille sted — i dit tempo, på dine præmisser.</p>
@@ -273,7 +381,7 @@
             <p class="footer-col-title">Produkt</p>
             <div class="footer-links">
               <a href="#features-prologue">Funktioner</a>
-              <a href="#showcase-title">Appvisninger</a>
+              <a href="#app-showcase">Appvisninger</a>
               <a href="#get-frisk">Google Play</a>
             </div>
           </div>
@@ -331,5 +439,6 @@
     </div>
   </div>
   <script src="../lang-modal.js"></script>
+  <script src="../site-reveal.js"></script>
 </body>
 </html>

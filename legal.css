@@ -294,3 +294,76 @@ body::before {
   font-weight: 400;
   user-select: none;
 }
+
+/* Language picker: keep light surfaces on legal pages (marketing site is dark) */
+body:has(.legal-wrap) .lang-modal-trigger {
+  --lang-trigger-bg: rgba(255, 255, 255, 0.78);
+  --lang-trigger-border: rgba(26, 46, 36, 0.1);
+  color: var(--brand);
+  border-radius: 16px;
+}
+
+body:has(.legal-wrap) .lang-modal-trigger-value {
+  color: var(--brand);
+}
+
+body:has(.legal-wrap) .lang-modal-trigger-icon {
+  background: linear-gradient(145deg, rgba(26, 46, 36, 0.05) 0%, rgba(108, 92, 231, 0.08) 100%);
+  border-color: rgba(26, 46, 36, 0.08);
+  color: var(--brand);
+}
+
+body:has(.legal-wrap) .header-lang {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.65) 0%, rgba(108, 92, 231, 0.08) 100%);
+  border-color: rgba(26, 46, 36, 0.08);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset;
+}
+
+body:has(.legal-wrap) .lang-modal-trigger--header {
+  --lang-trigger-bg: rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+}
+
+body:has(.legal-wrap) .footer-lang-modal {
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(26, 46, 36, 0.08);
+}
+
+body:has(.legal-wrap) .lang-modal-trigger--footer {
+  --lang-trigger-bg: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+}
+
+body:has(.legal-wrap) .lang-modal-panel {
+  background: linear-gradient(168deg, #fefffe 0%, #fdfdfc 45%, #f8f9fb 100%);
+  border-color: rgba(26, 46, 36, 0.1);
+  box-shadow: 0 -12px 48px rgba(26, 46, 36, 0.14), 0 0 0 1px rgba(255, 255, 255, 0.85) inset;
+}
+
+body:has(.legal-wrap) .lang-modal-backdrop {
+  background: rgba(15, 22, 28, 0.42);
+}
+
+body:has(.legal-wrap) .lang-modal-title {
+  color: var(--brand);
+}
+
+body:has(.legal-wrap) .lang-modal-header {
+  border-bottom-color: rgba(26, 46, 36, 0.08);
+}
+
+body:has(.legal-wrap) .lang-modal-option {
+  color: var(--text);
+  border-radius: 14px;
+}
+
+body:has(.legal-wrap) .lang-modal-list {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 249, 251, 0.75) 100%);
+}
+
+body:has(.legal-wrap) .lang-modal-option.is-current {
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.14) 0%, rgba(255, 255, 255, 0.92) 55%);
+  border-color: rgba(108, 92, 231, 0.28);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.95) inset, 0 0 0 1px rgba(108, 92, 231, 0.08);
+}
