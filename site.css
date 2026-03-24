@@ -1083,6 +1083,12 @@ main > .hero:first-child {
     radial-gradient(ellipse 58% 46% at 12% 82%, rgba(108, 92, 231, 0.10), transparent 50%);
 }
 
+.app-showcase-section--health::before {
+  background:
+    radial-gradient(ellipse 72% 52% at 82% 18%, rgba(45, 212, 191, 0.14), transparent 55%),
+    radial-gradient(ellipse 58% 46% at 12% 82%, rgba(139, 124, 240, 0.12), transparent 50%);
+}
+
 .app-showcase-section--journal::before {
   background:
     radial-gradient(ellipse 72% 52% at 82% 18%, rgba(139, 124, 240, 0.12), transparent 55%),
@@ -1179,6 +1185,18 @@ main > .hero:first-child {
   flex-direction: column;
   align-items: stretch;
   gap: var(--s-7);
+  width: 100%;
+}
+
+.app-showcase-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-7);
+  width: 100%;
+}
+
+.app-showcase-stack .app-showcase-visual {
   width: 100%;
 }
 
@@ -1318,7 +1336,7 @@ main > .hero:first-child {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top center;
 }
 
