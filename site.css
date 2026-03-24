@@ -1345,9 +1345,7 @@ main > .hero:first-child {
 .phone-screen {
   position: relative;
   aspect-ratio: 390 / 844;
-  width: min(100%, calc(var(--phone-screen-max-h) * 390 / 844));
-  max-width: 100%;
-  max-height: var(--phone-screen-max-h);
+  width: 100%;
   height: auto;
   margin-inline: auto;
   border-radius: 33px;
