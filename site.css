@@ -52,6 +52,9 @@
   --lang-slot-hover: rgba(255, 255, 255, 0.06);
   --lang-slot-active: rgba(15, 23, 42, 0.95);
   --lang-indicator-glow: rgba(139, 124, 240, 0.35);
+  /* Phone mockup: keep 390:844 glass in sync with image assets; paired max-height + width cap */
+  --phone-screen-max-h: min(58vh, 32rem);
+  --phone-screen-max-h-hero: min(72vh, 40rem);
 }
 
 *,
@@ -550,7 +553,7 @@ main > .hero:first-child {
 }
 
 .phone-frame--hero .phone-screen {
-  max-height: min(72vh, 40rem);
+  --phone-screen-max-h: var(--phone-screen-max-h-hero);
 }
 
 .btn {
@@ -1285,6 +1288,10 @@ main > .hero:first-child {
   position: relative;
   z-index: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   border-radius: 38px;
   background:
@@ -1320,9 +1327,13 @@ main > .hero:first-child {
 
 .phone-screen {
   position: relative;
-  width: 100%;
+  /* Lock portrait ratio; width capped so height never exceeds --phone-screen-max-h */
   aspect-ratio: 390 / 844;
-  max-height: min(58vh, 32rem);
+  width: min(100%, calc(var(--phone-screen-max-h) * 390 / 844));
+  max-width: 100%;
+  max-height: var(--phone-screen-max-h);
+  height: auto;
+  margin-inline: auto;
   border-radius: 30px;
   background: #0b0e14;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1333,6 +1344,8 @@ main > .hero:first-child {
 }
 
 .phone-screen img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
@@ -1360,7 +1373,6 @@ main > .hero:first-child {
 }
 
 .phone-screen img {
-  position: relative;
   z-index: 0;
   transition: transform 0.46s var(--ease-out), filter 0.32s var(--ease-soft);
   filter: saturate(1.02) contrast(1.02);
